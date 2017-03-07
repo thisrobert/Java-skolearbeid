@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=penger
+comment0.target=void\ setIn(int)
+comment1.params=withdrawal
+comment1.target=void\ withdraw(int)
+comment2.params=
+comment2.target=int\ getBalance()
+comment3.params=
+comment3.target=void\ print()
+numComments=4

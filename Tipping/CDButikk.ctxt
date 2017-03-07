@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CDButikk()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ CDButikk\n
+comment1.params=navn\ pris
+comment1.target=CDButikk(java.lang.String,\ double)
+comment2.params=pris
+comment2.target=void\ setPriceCd(double)
+comment3.params=navn
+comment3.target=void\ setNameCd(java.lang.String)
+comment4.params=
+comment4.target=double\ getCdPris()
+comment5.params=
+comment5.target=java.lang.String\ getCdNavn()
+numComments=6

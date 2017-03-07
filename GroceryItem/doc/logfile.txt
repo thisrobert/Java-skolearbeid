@@ -1,0 +1,38 @@
+Class documentation
+<---- javadoc command: ---->
+/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/JDK/Home/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/bluejcore.jar:/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/junit-4.8.2.jar:/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-core.jar:/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-device.jar:/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-gpio-extension.jar:/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/userlib/pi4j-service.jar:/Users/robertjohansson/Documents/Westerdals Teknologi/PGR100/GroceryItem
+-d
+/Users/robertjohansson/Documents/Westerdals Teknologi/PGR100/GroceryItem/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+/Users/robertjohansson/Downloads/BlueJ 3.1.7/BlueJ.app/Contents/Resources/Java/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/Users/robertjohansson/Documents/Westerdals Teknologi/PGR100/GroceryItem/Client.java
+<---- end of javadoc command ---->
+Loading source file /Users/robertjohansson/Documents/Westerdals Teknologi/PGR100/GroceryItem/Client.java...
+/Users/robertjohansson/Documents/Westerdals Teknologi/PGR100/GroceryItem/Client.java:11: error: <identifier> expected
+    private GroceryItem;
+                       ^
+/Users/robertjohansson/Documents/Westerdals Teknologi/PGR100/GroceryItem/Client.java:24: error: <identifier> expected
+    private clientMethod
+                        ^
+/Users/robertjohansson/Documents/Westerdals Teknologi/PGR100/GroceryItem/Client.java:28: error: class, interface, or enum expected
+}
+^
+3 errors

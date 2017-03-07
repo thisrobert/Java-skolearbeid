@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ClockDisplay()
+comment1.params=hour\ minute
+comment1.target=ClockDisplay(int,\ int)
+comment2.params=
+comment2.target=void\ initiate()
+comment3.params=
+comment3.target=void\ updateDisplay()
+comment4.params=hour\ minute
+comment4.target=void\ setTime(int,\ int)
+comment5.params=
+comment5.target=java.lang.String\ getTime()
+comment6.params=
+comment6.target=void\ timeTick()
+numComments=7

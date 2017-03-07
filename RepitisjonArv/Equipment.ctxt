@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Equipment()
+comment1.params=rarity\ minimumLevel\ name\ cost
+comment1.target=Equipment(Equipment.Rarity,\ int,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=Equipment.Rarity\ getRarity()
+comment3.params=rarity
+comment3.target=void\ setRarity(Equipment.Rarity)
+comment4.params=
+comment4.target=int\ getMinimumLevel()
+comment5.params=minimumLevel
+comment5.target=void\ setMinimumLevel(int)
+numComments=6

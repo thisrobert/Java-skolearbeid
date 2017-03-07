@@ -1,0 +1,242 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_IN_PAGE_ERROR (0xc0000006) at pc=0x630867d0, pid=3052, tid=1604
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_40-b26) (build 1.8.0_40-b26)
+# Java VM: Java HotSpot(TM) Client VM (25.40-b25 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0x2467d0]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x14e5f400):  JavaThread "BlueJ worker thread" [_thread_in_vm, id=1604, stack(0x15ee0000,0x15f30000)]
+
+siginfo: ExceptionCode=0xc0000006, ExceptionInformation=0x00000008 0x630867d0 0xc0000098 
+
+Registers:
+EAX=0x00000000, EBX=0x00000000, ECX=0x004dda50, EDX=0x14e5f400
+ESP=0x15f2f964, EBP=0x15f2f9a0, ESI=0x14e5f400, EDI=0x14e5f400
+EIP=0x630867d0, EFLAGS=0x00010246
+
+Top of Stack: (sp=0x15f2f964)
+0x15f2f964:   62f9cdbe 62f95265 14e5f400 14b48768
+0x15f2f974:   14b48768 14b48700 15f2f96c 00000000
+0x15f2f984:   00000000 00000000 00000000 fffffffe
+0x15f2f994:   15f2f9a4 62e47014 14e5f400 15f2f9c0
+0x15f2f9a4:   62f3d912 14e5f400 14e5f400 00000006
+0x15f2f9b4:   14e5f400 14b48768 14b48768 15f2fa00
+0x15f2f9c4:   6c0f4ff3 00000000 02691be1 14e5f540
+0x15f2f9d4:   15f2fa08 00000000 02691796 15f2f9e0 
+
+Instructions: (pc=0x630867d0)
+0x630867b0:   
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xc0000006]
+
+Register to memory mapping:
+
+EAX=0x00000000 is an unknown value
+EBX=0x00000000 is an unknown value
+ECX=0x004dda50 is an unknown value
+EDX=0x14e5f400 is a thread
+ESP=0x15f2f964 is pointing into the stack for thread: 0x14e5f400
+EBP=0x15f2f9a0 is pointing into the stack for thread: 0x14e5f400
+ESI=0x14e5f400 is a thread
+EDI=0x14e5f400 is a thread
+
+
+Stack: [0x15ee0000,0x15f30000],  sp=0x15f2f964,  free space=318k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x2467d0]
+V  [jvm.dll+0xfd912]
+C  [java.dll+0x4ff3]
+j  java.lang.Shutdown.halt(I)V+7
+j  java.lang.Shutdown.exit(I)V+99
+j  java.lang.Runtime.exit(I)V+14
+j  java.lang.System.exit(I)V+4
+j  bluej.runtime.ExecServer$1.run()V+138
+v  ~StubRoutines::call_stub
+V  [jvm.dll+0x155c05]
+V  [jvm.dll+0x21b0be]
+V  [jvm.dll+0x155c9e]
+V  [jvm.dll+0x155e26]
+V  [jvm.dll+0x155e97]
+V  [jvm.dll+0xfafaf]
+V  [jvm.dll+0x178f3c]
+V  [jvm.dll+0x17902a]
+V  [jvm.dll+0x1bd616]
+C  [msvcr100.dll+0x5c556]
+C  [msvcr100.dll+0x5c600]
+C  [kernel32.dll+0x1338a]
+C  [ntdll.dll+0x39902]
+C  [ntdll.dll+0x398d5]
+C  0x00000000
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.lang.Shutdown.halt0(I)V+0
+j  java.lang.Shutdown.halt(I)V+7
+j  java.lang.Shutdown.exit(I)V+99
+j  java.lang.Runtime.exit(I)V+14
+j  java.lang.System.exit(I)V+4
+j  bluej.runtime.ExecServer$1.run()V+138
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x1566a800 JavaThread "main" [_thread_blocked, id=6016, stack(0x15ab0000,0x15b00000)]
+  0x021cc800 JavaThread "DestroyJavaVM" [_thread_blocked, id=1932, stack(0x02220000,0x02270000)]
+=>0x14e5f400 JavaThread "BlueJ worker thread" [_thread_in_vm, id=1604, stack(0x15ee0000,0x15f30000)]
+  0x14e53000 JavaThread "AWT-Windows" daemon [_thread_in_native, id=3372, stack(0x14e60000,0x14eb0000)]
+  0x14e51400 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=2752, stack(0x154b0000,0x15500000)]
+  0x14ceac00 JavaThread "Service Thread" daemon [_thread_blocked, id=1580, stack(0x153f0000,0x15440000)]
+  0x14cd3c00 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=2608, stack(0x15290000,0x152e0000)]
+  0x14ccd000 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=1092, stack(0x15230000,0x15280000)]
+  0x14cc9c00 JavaThread "Attach Listener" daemon [_thread_blocked, id=1520, stack(0x15060000,0x150b0000)]
+  0x14cc6c00 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=5188, stack(0x02320000,0x02370000)]
+  0x14c82000 JavaThread "Finalizer" daemon [_thread_blocked, id=5368, stack(0x04790000,0x047e0000)]
+  0x14c7c000 JavaThread "Reference Handler" daemon [_thread_blocked, id=5132, stack(0x14ec0000,0x14f10000)]
+
+Other Threads:
+  0x14c79400 VMThread [stack: 0x04710000,0x04760000] [id=5212]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ def new generation   total 4928K, used 3469K [0x04800000, 0x04d50000, 0x09d50000)
+  eden space 4416K,  78% used [0x04800000, 0x04b63458, 0x04c50000)
+  from space 512K,   0% used [0x04c50000, 0x04c50000, 0x04cd0000)
+  to   space 512K,   0% used [0x04cd0000, 0x04cd0000, 0x04d50000)
+ tenured generation   total 10944K, used 0K [0x09d50000, 0x0a800000, 0x14800000)
+   the space 10944K,   0% used [0x09d50000, 0x09d50000, 0x09d50200, 0x0a800000)
+ Metaspace       used 3326K, capacity 3506K, committed 3520K, reserved 4480K
+
+Card table byte_map: [0x02050000,0x020e0000] byte_map_base: 0x0202c000
+
+Polling page: 0x00220000
+
+CodeCache: size=32768Kb used=803Kb max_used=803Kb free=31964Kb
+ bounds [0x02680000, 0x02750000, 0x04680000]
+ total_blobs=269 nmethods=110 adapters=98
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.662 Thread 0x14cd3c00  106   !         java.util.concurrent.ConcurrentHashMap::transfer (832 bytes)
+Event: 0.666 Thread 0x14cd3c00 nmethod 106 0x027423c8 code [0x027425a0, 0x027436d8]
+Event: 12.552 Thread 0x14cd3c00  107             java.io.WinNTFileSystem::normalize (231 bytes)
+Event: 12.555 Thread 0x14cd3c00 nmethod 107 0x02744ec8 code [0x02745160, 0x0274685c]
+Event: 12.556 Thread 0x14cd3c00  108             java.lang.AbstractStringBuilder::<init> (12 bytes)
+Event: 12.556 Thread 0x14cd3c00 nmethod 108 0x02748408 code [0x02748500, 0x02748610]
+Event: 12.558 Thread 0x14cd3c00  109             java.lang.String::indexOf (7 bytes)
+Event: 12.558 Thread 0x14cd3c00 nmethod 109 0x02748688 code [0x02748780, 0x0274882c]
+Event: 22.637 Thread 0x14cd3c00  110             sun.misc.MetaIndex::mayContain (51 bytes)
+Event: 22.637 Thread 0x14cd3c00 nmethod 110 0x02748888 code [0x027489b0, 0x02748b28]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.147 Thread 0x021cc800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x0480b688) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\v…‹Ý¸ÉÂ?
+Event: 0.147 Thread 0x021cc800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x0480b908) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\jni.cpp, l^ì%öØ“à?
+Event: 0.518 Thread 0x021cc800 Exception <a 'java/security/PrivilegedActionException'> (0x049045b0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\jvm.cpp, line 1382]
+Event: 0.518 Thread 0x021cc800 Exception <a 'java/security/PrivilegedActionException'> (0x04904760) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\jvm.cpp, line 1382]
+Event: 0.520 Thread 0x021cc800 Exception <a 'java/security/PrivilegedActionException'> (0x049066c8) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\jvm.cpp, line 1382]
+Event: 0.520 Thread 0x021cc800 Exception <a 'java/security/PrivilegedActionException'> (0x04906878) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\jvm.cpp, line 1382]
+Event: 0.534 Thread 0x021cc800 Exception <a 'java/io/FileNotFoundException'> (0x04916318) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\jni.cpp, line 709]
+Event: 0.607 Thread 0x021cc800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x049e5ae0) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\methodHandles.cpp, line 1125]
+Event: 0.609 Thread 0x021cc800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0x049f3000) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\prims\methodHandles.cpp, line 1125]
+Event: 1339.589 Thread 0x14e5f400 Exception <a 'java/lang/NoClassDefFoundError': java/util/IdentityHashMap$KeySet> (0x04a9cd40) thrown at [C:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u40\3098\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 208]
+
+Events (10 events):
+Event: 1339.588 Executing VM operation: ChangeBreakpoints
+Event: 1339.588 Executing VM operation: ChangeBreakpoints done
+Event: 1339.588 Thread 0x14ccdc00 Thread exited: 0x14ccdc00
+Event: 1339.588 Executing VM operation: ChangeBreakpoints
+Event: 1339.588 Executing VM operation: ChangeBreakpoints done
+Event: 1339.588 Executing VM operation: ChangeBreakpoints
+Event: 1339.588 Executing VM operation: ChangeBreakpoints done
+Event: 1339.589 loading class java/util/IdentityHashMap$KeySet
+Event: 1339.589 loading class java/util/IdentityHashMap$KeySet done
+Event: 1339.589 Thread 0x14cc1800 Thread exited: 0x14cc1800
+
+
+Dynamic libraries:
+0x000b0000 - 0x000e3000 	F:\BlueJ\jdk\jre\bin\java.exe
+0x77d50000 - 0x77ed0000 	C:\Windows\SysWOW64\ntdll.dll
+0x76500000 - 0x76610000 	C:\Windows\syswow64\kernel32.dll
+0x759a0000 - 0x759e7000 	C:\Windows\syswow64\KERNELBASE.dll
+0x759f0000 - 0x75a91000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76380000 - 0x7642c000 	C:\Windows\syswow64\msvcrt.dll
+0x76610000 - 0x76629000 	C:\Windows\SysWOW64\sechost.dll
+0x75840000 - 0x75930000 	C:\Windows\syswow64\RPCRT4.dll
+0x75660000 - 0x756c0000 	C:\Windows\syswow64\SspiCli.dll
+0x75650000 - 0x7565c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76040000 - 0x76140000 	C:\Windows\syswow64\USER32.dll
+0x76470000 - 0x76500000 	C:\Windows\syswow64\GDI32.dll
+0x762f0000 - 0x762fa000 	C:\Windows\syswow64\LPK.dll
+0x756c0000 - 0x7575d000 	C:\Windows\syswow64\USP10.dll
+0x72a30000 - 0x72bce000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x75940000 - 0x75997000 	C:\Windows\syswow64\SHLWAPI.dll
+0x76c90000 - 0x76cf0000 	C:\Windows\system32\IMM32.DLL
+0x75760000 - 0x7582c000 	C:\Windows\syswow64\MSCTF.dll
+0x6b840000 - 0x6b8ff000 	F:\BlueJ\jdk\jre\bin\msvcr100.dll
+0x62e40000 - 0x63200000 	F:\BlueJ\jdk\jre\bin\client\jvm.dll
+0x6c140000 - 0x6c147000 	C:\Windows\system32\WSOCK32.dll
+0x76430000 - 0x76465000 	C:\Windows\syswow64\WS2_32.dll
+0x75830000 - 0x75836000 	C:\Windows\syswow64\NSI.dll
+0x74250000 - 0x74282000 	C:\Windows\system32\WINMM.dll
+0x72d60000 - 0x72d69000 	C:\Windows\system32\VERSION.dll
+0x77d20000 - 0x77d25000 	C:\Windows\syswow64\PSAPI.DLL
+0x6c150000 - 0x6c15c000 	F:\BlueJ\jdk\jre\bin\verify.dll
+0x6c0f0000 - 0x6c111000 	F:\BlueJ\jdk\jre\bin\java.dll
+0x75530000 - 0x75559000 	F:\BlueJ\jdk\jre\bin\jdwp.dll
+0x75520000 - 0x75527000 	F:\BlueJ\jdk\jre\bin\npt.dll
+0x6bc40000 - 0x6bc53000 	F:\BlueJ\jdk\jre\bin\zip.dll
+0x76d00000 - 0x7794c000 	C:\Windows\syswow64\SHELL32.dll
+0x75b20000 - 0x75c7d000 	C:\Windows\syswow64\ole32.dll
+0x76030000 - 0x7603b000 	C:\Windows\syswow64\profapi.dll
+0x75560000 - 0x75569000 	F:\BlueJ\jdk\jre\bin\dt_shmem.dll
+0x63390000 - 0x634d5000 	F:\BlueJ\jdk\jre\bin\awt.dll
+0x76630000 - 0x766bf000 	C:\Windows\syswow64\OLEAUT32.dll
+0x72720000 - 0x727a0000 	C:\Windows\system32\uxtheme.dll
+0x70a70000 - 0x70a83000 	C:\Windows\system32\dwmapi.dll
+0x724b0000 - 0x7259b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -ea -Djavafx.macosx.embedded=true -agentlib:jdwp=transport=dt_shmem,address=javadebug -Dfile.encoding=UTF-8 
+java_command: bluej.runtime.ExecServer UTF-8
+java_class_path (initial): F:\BlueJ\lib\bluejcore.jar;F:\BlueJ\lib\junit-4.8.2.jar;F:\BlueJ\lib\userlib\pi4j-core.jar;F:\BlueJ\lib\userlib\pi4j-device.jar;F:\BlueJ\lib\userlib\pi4j-gpio-extension.jar;F:\BlueJ\lib\userlib\pi4j-service.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Program Files (x86)\QuickTime\QTSystem\
+USERNAME=marste
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23418)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, aes, clmul, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 4048696k(1781800k free), swap 8095532k(5300872k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.40-b25) for windows-x86 JRE (1.8.0_40-b26), built on Mar  7 2015 13:51:08 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Fri Sep 16 15:59:12 2016
+elapsed time: 1339 seconds (0d 0h 22m 19s)
+

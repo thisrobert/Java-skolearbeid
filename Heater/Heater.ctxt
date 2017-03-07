@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Heater()
+comment0.text=\n\ Create\ a\ Heater\ object,\ with\ initial\ temperature\n\ of\ 15\ degrees.\n
+comment1.params=
+comment1.target=void\ warmer()
+comment1.text=\n\ Increase\ the\ temperature\ by\ 5\ degrees.\n
+comment2.params=
+comment2.target=void\ cooler()
+comment2.text=\n\ Decrease\ the\ temperature\ by\ 5\ degrees.\n
+numComments=3

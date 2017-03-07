@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TrafficLight()
+comment1.params=status
+comment1.target=TrafficLight(java.lang.String)
+comment2.params=status
+comment2.target=void\ setStatus(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getStatus()
+comment4.params=
+comment4.target=void\ change()
+numComments=5
