@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Clock()
+comment1.params=inPlacementNr\ inRegNr\ inStatus\ inTimeInterval
+comment1.target=Clock(java.lang.String,\ java.lang.String,\ java.lang.String,\ double)
+comment2.params=inTimeInterval
+comment2.target=void\ setTimeInterval(double)
+comment3.params=
+comment3.target=double\ getTimeInterval()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=obj
+comment5.target=boolean\ equals(java.lang.Object)
+numComments=6

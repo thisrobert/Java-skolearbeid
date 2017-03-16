@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Weight()
+comment1.params=inPlacementNr\ inRegNr\ inStatus\ inMinWeight\ inMaxWeight
+comment1.target=Weight(java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ double)
+comment2.params=inMaxWeight
+comment2.target=void\ setMaxWeight(double)
+comment3.params=
+comment3.target=double\ getMaxWeight()
+comment4.params=inMinWeight
+comment4.target=void\ setMinWeight(double)
+comment5.params=
+comment5.target=double\ getMinWeight()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=obj
+comment7.target=boolean\ equals(java.lang.Object)
+numComments=8

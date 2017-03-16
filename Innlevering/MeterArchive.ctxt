@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=instrument
+comment0.target=boolean\ addMeter(Meter)
+comment1.params=inRegNr
+comment1.target=java.lang.Boolean\ deleteMeter(java.lang.String)
+comment2.params=inRegNr\ inPlacementNr
+comment2.target=boolean\ changeMeterPlacement(java.lang.String,\ java.lang.String)
+comment3.params=inRegNr
+comment3.target=boolean\ changeMeterStatus(java.lang.String)
+comment4.params=
+comment4.target=void\ getAllMeters()
+numComments=5

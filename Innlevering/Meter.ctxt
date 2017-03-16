@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Meter()
+comment1.params=inPlacementNr\ inRegNr\ inStatus
+comment1.target=Meter(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=inPlacementNr
+comment2.target=void\ setPlacementNr(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getPlacementNr()
+comment4.params=inRegNr
+comment4.target=void\ setRegNr(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ getRegNr()
+comment6.params=inStatus
+comment6.target=void\ setStatus(java.lang.String)
+comment7.params=
+comment7.target=java.lang.String\ getStatus()
+comment8.params=
+comment8.target=java.lang.String\ toString()
+numComments=9
